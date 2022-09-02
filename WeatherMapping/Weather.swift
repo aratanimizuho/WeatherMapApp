@@ -1,18 +1,18 @@
 //
-//  Forecaster.swift
+//  Weather.swift
 //  WeatherMapping
 //
-//  Created by 荒谷瑞穂 on 2022/08/26.
+//  Created by 荒谷瑞穂 on 2022/08/27.
 //
 
 import UIKit
-import CoreLocation
 
-class Forecaster: NSObject {
-    static func forecast(lat:String, lon:String,completion:@escaping (ForecastResult)->Void){
+class Weather: NSObject {
+    
+    static func Weather(lat:String, lon:String,completion:@escaping (currentWeather)->Void){
         
         let appID = "a8a5d4e220b341ef92a135f4ce973bde"
-        let urlString = "https://api.openweathermap.org/data/2.5/forecast?lat=" +  lat + "&lon=" + lon + "&appid=" + appID
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=" +  lat + "&lon=" + lon + "&appid=" + appID
         guard let url = URL(string: urlString) else {
             print("URL error")
             return
@@ -27,7 +27,7 @@ class Forecaster: NSObject {
             
             
             do {
-                let result:ForecastResult = try JSONDecoder().decode(ForecastResult.self, from: jsonData)
+                let result:currentWeather = try JSONDecoder().decode(currentWeather.self, from: jsonData)
                 completion(result)
             }catch let error{
                 print(error)
@@ -37,12 +37,7 @@ class Forecaster: NSObject {
     }
 }
 
-struct ForecastResult: Codable{
-    var list:[Forecast]
-}
-
-struct Forecast: Codable {
-    var dt_txt:String
+struct currentWeather: Codable {
     var main:Main
     var weather:[Weather]
     var dt:Int
@@ -50,6 +45,8 @@ struct Forecast: Codable {
     
     struct Main: Codable {
         var temp: Double
+        var temp_max:Double
+        var temp_min:Double
         var pressure : Int
         var humidity : Int
     }
@@ -66,8 +63,16 @@ struct Forecast: Codable {
         var main: String
     }
     
+    func getTempmax()->String{
+        return String(format: "%.1f ℃",(main.temp_max)-273.15)
+    }
+    
+    func getTempmin()->String{
+        return String(format: "%.1f ℃", (main.temp_min)-273.15)
+    }
+    
     func getFormattedTemp() -> String{
-        return String(format: "%.1f ℃", main.temp-273.15)
+        return String(format: "%.1f ℃", (main.temp)-273.15)
     }
     
     func getFormattedPressure() -> String{
@@ -81,6 +86,7 @@ struct Forecast: Codable {
     func getDescription() -> String{
         return weather.count > 0 ? weather[0].description : "" // 三項演算子
     }
+    
     func getWindSpeed()->String{
         return String(format: "%.1f m/s", wind.speed)
     }
@@ -98,6 +104,7 @@ struct Forecast: Codable {
             return ""
         }
     }
+    
     func getIconText() -> String {
         if weather.count == 0 {
             return ""

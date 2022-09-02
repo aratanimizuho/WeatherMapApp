@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB09E7E428C0ACAE00037066 /* DetailForecastController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB09E7E328C0ACAE00037066 /* DetailForecastController.storyboard */; };
+		CB09E7E628C0AE4300037066 /* DetailForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB09E7E528C0AE4300037066 /* DetailForecastController.swift */; };
+		CB09E7E828C0DC0B00037066 /* DetailForecastResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB09E7E728C0DC0B00037066 /* DetailForecastResult.storyboard */; };
+		CB09E7EA28C0DC4C00037066 /* DetailForecastResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB09E7E928C0DC4C00037066 /* DetailForecastResult.swift */; };
 		CBBEE01D28B8914F00DBA458 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE01C28B8914F00DBA458 /* DetailViewController.swift */; };
 		CBBEE01F28B89E2600DBA458 /* Button Mark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBEE01E28B89E2600DBA458 /* Button Mark.png */; };
 		CBBEE02128B8C76D00DBA458 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBEE02028B8C76D00DBA458 /* DetailViewController.storyboard */; };
 		CBBEE02328B8CC6F00DBA458 /* Forecaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE02228B8CC6F00DBA458 /* Forecaster.swift */; };
+		CBBEE02528BA3F1100DBA458 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE02428BA3F1100DBA458 /* Weather.swift */; };
+		CBBEE02728BB779F00DBA458 /* CustomListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE02628BB779F00DBA458 /* CustomListTableViewCell.swift */; };
+		CBBEE02E28BBA90A00DBA458 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = CBBEE02D28BBA90A00DBA458 /* OrderedCollections */; };
+		CBBEE03228BC651400DBA458 /* CustomUpperUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE03128BC651400DBA458 /* CustomUpperUIView.swift */; };
+		CBBEE03428BCD9FE00DBA458 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBEE03328BCD9FE00DBA458 /* CustomCollectionViewCell.swift */; };
 		CBC4A4C428B72B7F007FA927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4A4C328B72B7F007FA927 /* AppDelegate.swift */; };
 		CBC4A4C628B72B7F007FA927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4A4C528B72B7F007FA927 /* SceneDelegate.swift */; };
 		CBC4A4C828B72B7F007FA927 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC4A4C728B72B7F007FA927 /* ViewController.swift */; };
@@ -20,10 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB09E7E328C0ACAE00037066 /* DetailForecastController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailForecastController.storyboard; sourceTree = "<group>"; };
+		CB09E7E528C0AE4300037066 /* DetailForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailForecastController.swift; sourceTree = "<group>"; };
+		CB09E7E728C0DC0B00037066 /* DetailForecastResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailForecastResult.storyboard; sourceTree = "<group>"; };
+		CB09E7E928C0DC4C00037066 /* DetailForecastResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailForecastResult.swift; sourceTree = "<group>"; };
 		CBBEE01C28B8914F00DBA458 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CBBEE01E28B89E2600DBA458 /* Button Mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Mark.png"; sourceTree = "<group>"; };
 		CBBEE02028B8C76D00DBA458 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		CBBEE02228B8CC6F00DBA458 /* Forecaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecaster.swift; sourceTree = "<group>"; };
+		CBBEE02428BA3F1100DBA458 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CBBEE02628BB779F00DBA458 /* CustomListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListTableViewCell.swift; sourceTree = "<group>"; };
+		CBBEE03128BC651400DBA458 /* CustomUpperUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUpperUIView.swift; sourceTree = "<group>"; };
+		CBBEE03328BCD9FE00DBA458 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBC4A4C028B72B7F007FA927 /* WeatherMapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherMapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC4A4C328B72B7F007FA927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC4A4C528B72B7F007FA927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBEE02E28BBA90A00DBA458 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +85,19 @@
 				CBBEE01E28B89E2600DBA458 /* Button Mark.png */,
 				CBC4A4C328B72B7F007FA927 /* AppDelegate.swift */,
 				CBC4A4C528B72B7F007FA927 /* SceneDelegate.swift */,
-				CBBEE01C28B8914F00DBA458 /* DetailViewController.swift */,
-				CBBEE02228B8CC6F00DBA458 /* Forecaster.swift */,
 				CBC4A4C728B72B7F007FA927 /* ViewController.swift */,
+				CBBEE01C28B8914F00DBA458 /* DetailViewController.swift */,
+				CB09E7E528C0AE4300037066 /* DetailForecastController.swift */,
+				CB09E7E928C0DC4C00037066 /* DetailForecastResult.swift */,
+				CBBEE03128BC651400DBA458 /* CustomUpperUIView.swift */,
+				CBBEE02628BB779F00DBA458 /* CustomListTableViewCell.swift */,
+				CBBEE03328BCD9FE00DBA458 /* CustomCollectionViewCell.swift */,
+				CBBEE02228B8CC6F00DBA458 /* Forecaster.swift */,
+				CBBEE02428BA3F1100DBA458 /* Weather.swift */,
 				CBC4A4C928B72B7F007FA927 /* Main.storyboard */,
 				CBBEE02028B8C76D00DBA458 /* DetailViewController.storyboard */,
+				CB09E7E328C0ACAE00037066 /* DetailForecastController.storyboard */,
+				CB09E7E728C0DC0B00037066 /* DetailForecastResult.storyboard */,
 				CBC4A4CC28B72B82007FA927 /* Assets.xcassets */,
 				CBC4A4CE28B72B82007FA927 /* LaunchScreen.storyboard */,
 				CBC4A4D128B72B82007FA927 /* Info.plist */,
@@ -95,6 +121,9 @@
 			dependencies = (
 			);
 			name = WeatherMapping;
+			packageProductDependencies = (
+				CBBEE02D28BBA90A00DBA458 /* OrderedCollections */,
+			);
 			productName = WeatherMapping;
 			productReference = CBC4A4C028B72B7F007FA927 /* WeatherMapping.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +152,9 @@
 				Base,
 			);
 			mainGroup = CBC4A4B728B72B7F007FA927;
+			packageReferences = (
+				CBBEE02C28BBA90A00DBA458 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = CBC4A4C128B72B7F007FA927 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +173,8 @@
 				CBBEE01F28B89E2600DBA458 /* Button Mark.png in Resources */,
 				CBBEE02128B8C76D00DBA458 /* DetailViewController.storyboard in Resources */,
 				CBC4A4CD28B72B82007FA927 /* Assets.xcassets in Resources */,
+				CB09E7E428C0ACAE00037066 /* DetailForecastController.storyboard in Resources */,
+				CB09E7E828C0DC0B00037066 /* DetailForecastResult.storyboard in Resources */,
 				CBC4A4CB28B72B7F007FA927 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,9 +187,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBEE02328B8CC6F00DBA458 /* Forecaster.swift in Sources */,
+				CB09E7E628C0AE4300037066 /* DetailForecastController.swift in Sources */,
+				CBBEE03428BCD9FE00DBA458 /* CustomCollectionViewCell.swift in Sources */,
 				CBBEE01D28B8914F00DBA458 /* DetailViewController.swift in Sources */,
+				CBBEE03228BC651400DBA458 /* CustomUpperUIView.swift in Sources */,
+				CB09E7EA28C0DC4C00037066 /* DetailForecastResult.swift in Sources */,
 				CBC4A4C828B72B7F007FA927 /* ViewController.swift in Sources */,
+				CBBEE02728BB779F00DBA458 /* CustomListTableViewCell.swift in Sources */,
 				CBC4A4C428B72B7F007FA927 /* AppDelegate.swift in Sources */,
+				CBBEE02528BA3F1100DBA458 /* Weather.swift in Sources */,
 				CBC4A4C628B72B7F007FA927 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBBEE02C28BBA90A00DBA458 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBBEE02D28BBA90A00DBA458 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBBEE02C28BBA90A00DBA458 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBC4A4B828B72B7F007FA927 /* Project object */;
 }
