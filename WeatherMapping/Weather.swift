@@ -11,7 +11,7 @@ class Weather: NSObject {
     
     static func Weather(lat:String, lon:String,completion:@escaping (currentWeather)->Void){
         
-        let appID = "a8a5d4e220b341ef92a135f4ce973bde"
+        let appID = ""
         let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=" +  lat + "&lon=" + lon + "&appid=" + appID
         guard let url = URL(string: urlString) else {
             print("URL error")

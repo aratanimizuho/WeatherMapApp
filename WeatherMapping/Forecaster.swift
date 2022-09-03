@@ -11,7 +11,7 @@ import CoreLocation
 class Forecaster: NSObject {
     static func forecast(lat:String, lon:String,completion:@escaping (ForecastResult)->Void){
         
-        let appID = "a8a5d4e220b341ef92a135f4ce973bde"
+        let appID = ""
         let urlString = "https://api.openweathermap.org/data/2.5/forecast?lat=" +  lat + "&lon=" + lon + "&appid=" + appID
         guard let url = URL(string: urlString) else {
             print("URL error")
